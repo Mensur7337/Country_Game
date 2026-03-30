@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Country Game</h1>
+
+    <div id="login-container">
+        <label>Username :</label>
+        <input type="text" id="login-username" placeholder="Enter username">
+
+       <label>Password :</label>
+<div class="password-wrapper">
+    <input type="password" id="login-password" placeholder="Enter password">
+    <span id="toggle-password" class="toggle-icon">👀</span>
+</div>
+
+
+        <p id="login-message" class="message" style="display:none; color:red;"></p>
+
+        <button type="button" id="login-btn">Login</button>
+        <button type="button" id="open-register">Create Account</button>
+    </div>
+
+    <div id="register-container" style="display:none;">
+        <label>Name :</label>
+        <input type="text" id="reg-name">
+
+        <label>Surname :</label>
+        <input type="text" id="reg-surname">
+
+        <label>Username :</label>
+        <input type="text" id="reg-username">
+
+        <label>Password :</label>
+<div class="password-wrapper">
+    <input type="password" id="reg-password">
+    <span id="toggle-password-register" class="toggle-icon">👀</span>
+</div>
+        <p id="register-message" class="message" style="display:none; color:red; font-size: small;"></p>
+        <button type="button" id="register-btn">Register</button>
+        <button type="button" id="back-login">Back to Login</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

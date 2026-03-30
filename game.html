@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-layout">
+
+    <div class="left-panel container">
+
+        <h2>Question <span id="question-number">1</span> / 10</h2>
+
+        <div class="progress">
+            <div id="progress-bar"></div>
+        </div>
+
+        <div id="question">
+
+            <img id="flag" alt="Bayrak" class="flag-img">
+            
+            <label for="country-name">Country Name:</label>
+            <input type="text" id="input-country" placeholder="Country Name">
+            <label for="capital">Capital: </label>
+            <input type="text" id="input-capital" placeholder="Capital">
+            <label for="population">Population: </label>
+            <input type="number" id="input-population" placeholder="Population">
+
+            <div class="button-group">
+                <button id="btn-submit" disabled>Answer</button>
+                <button id="btn-next" disabled>Next Question ➦</button>                   
+                     <button id="btn-skip" class="danger-btn">Pass The Question</button>
+                     <span id="messageand"></span>
+            </div>
+            
+
+        </div>
+        
+        
+    </div>
+
+
+    <div class="right-panel container">
+
+        <h3>The remaining time</h3>
+        <div class="timer-circle" id="timer-display" >30</div>
+
+        <div id="total-score-display" class="score-display">
+            Point: 0
+        </div>
+                <button id="btn-end" class="danger-btn">Game Over</button>
+
+                    <div id="result-message" class="result-message"></div>
+    </div>
+
+</div>
+  <div id="end-screen" class="end-screen hidden">
+
+    <div class="end-card">
+
+        <h1>🎉The Tour is Completed</h1>
+
+        <div class="big-score" id="final-score">0</div>
+
+        <p id="performance-text"></p>
+
+        <div class="end-buttons">
+            <button id="btn-restart">Try Again</button>
+            <button id="btn-scoreboard">Skorboard</button>
+        </div>
+
+        <div id="skipped-section"></div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
